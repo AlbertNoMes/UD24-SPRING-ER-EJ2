@@ -62,7 +62,7 @@ public class EmpleadoController {
 	}
 	
 	@DeleteMapping("/empleados/{codigo}") // PARA BORRAR POR codigo
-	public void deleteEmpleado(@PathVariable(name="id") String DNI) {
+	public void deleteEmpleado(@PathVariable(name="codigo") String DNI) {
 		empleadoServiceImpl.deleteEmpleado(DNI);
 	}
 

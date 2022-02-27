@@ -28,7 +28,7 @@ public class Empleado {
 	// CONSTRUCTOR CON TODO
 	public Empleado(String dNI, String nombre, String apellidos, Departamento departamento) {
 		super();
-		DNI = dNI;
+		this.DNI = dNI;
 		this.nombre = nombre;
 		this.apellidos = apellidos;
 		this.departamento = departamento;
@@ -40,7 +40,7 @@ public class Empleado {
 	}
 
 	public void setDNI(String dNI) {
-		DNI = dNI;
+		this.DNI = dNI;
 	}
 
 	public String getNombre() {

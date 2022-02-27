@@ -3,10 +3,12 @@ package mainApp.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import mainApp.dao.IEmpleadoDAO;
 import mainApp.dto.Empleado;
 
+@Service
 public class EmpleadoServiceImpl implements IEmpleadoService{
 
 	@Autowired // TRAE TODA LA FUNCIONALIDAD DEL DAO. UN COPIAR Y PEGAR

@@ -3,10 +3,12 @@ package mainApp.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import mainApp.dao.IDepartamentoDAO;
 import mainApp.dto.Departamento;
 
+@Service
 public class DepartamentoServiceImpl implements IDepartamentoService{
 	
 	@Autowired // TRAE TODA LA FUNCIONALIDAD DEL DAO. UN COPIAR Y PEGAR
@@ -23,7 +25,7 @@ public class DepartamentoServiceImpl implements IDepartamentoService{
 	}
 
 	@Override
-	public Departamento getDepartamentoById(int codigo) {
+	public Departamento getDepartamentoById(Integer codigo) {
 		return iDepartamentoDAO.findById(codigo).get();
 	}
 
@@ -38,7 +40,7 @@ public class DepartamentoServiceImpl implements IDepartamentoService{
 	}
 
 	@Override
-	public void deleteDepartamento(int codigo) {
+	public void deleteDepartamento(Integer codigo) {
 		iDepartamentoDAO.deleteById(codigo);
 		
 	}

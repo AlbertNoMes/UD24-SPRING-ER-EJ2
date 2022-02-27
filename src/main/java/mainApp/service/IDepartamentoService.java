@@ -11,12 +11,12 @@ public interface IDepartamentoService {
 
 	public Departamento addDepartamento(Departamento departamento); // ADD NUEVO DEPARTAMENTO
 
-	public Departamento getDepartamentoById(int codigo); // GET DEPARTAMENTO BY ID
+	public Departamento getDepartamentoById(Integer codigo); // GET DEPARTAMENTO BY ID
 
 	public List<Departamento> listarDepartamentoNombre(String nombre); // LISTA DEPARTAMENTO POR NOMBRE
 
 	public Departamento actualizarDepartamento(Departamento departamento); // ACTUALIZA DATOS DEL DEPARTAMENTO
 
-	public void deleteDepartamento(int codigo); // ELIMINA EL DEPARTAMENTO
+	public void deleteDepartamento(Integer codigo); // ELIMINA EL DEPARTAMENTO
 
 }
